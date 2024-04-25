@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Linpony&#39;s Blog</title>
+  <icon>https://shortimenosee.github.io/icon.png</icon>
+  
+  <link href="https://shortimenosee.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://shortimenosee.github.io/"/>
+  <updated>2024-04-25T12:49:35.771Z</updated>
+  <id>https://shortimenosee.github.io/</id>
+  
+  <author>
+    <name>linpony</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>语言模型</title>
+    <link href="https://shortimenosee.github.io/2024/04/25/llm/"/>
+    <id>https://shortimenosee.github.io/2024/04/25/llm/</id>
+    <published>2024-04-24T16:00:00.000Z</published>
+    <updated>2024-04-25T12:49:35.771Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;llm基础知识&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;</summary>
+    
+    
+    
+    <category term="学习" scheme="https://shortimenosee.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="llm" scheme="https://shortimenosee.github.io/tags/llm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cybersecurity datasource</title>
+    <link href="https://shortimenosee.github.io/2024/04/18/ontology_design2/"/>
+    <id>https://shortimenosee.github.io/2024/04/18/ontology_design2/</id>
+    <published>2024-04-17T16:00:00.000Z</published>
+    <updated>2024-04-25T12:49:35.771Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;整理一下可能用到的数据源&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;</summary>
+    
+    
+    
+    <category term="学习" scheme="https://shortimenosee.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="Datesource" scheme="https://shortimenosee.github.io/tags/Datesource/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Regex</title>
+    <link href="https://shortimenosee.github.io/2024/04/18/regex/"/>
+    <id>https://shortimenosee.github.io/2024/04/18/regex/</id>
+    <published>2024-04-17T16:00:00.000Z</published>
+    <updated>2024-04-25T12:49:35.771Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;regex正则匹配应用&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;</summary>
+    
+    
+    
+    <category term="学习" scheme="https://shortimenosee.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="Datesource" scheme="https://shortimenosee.github.io/tags/Datesource/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ontology Design</title>
+    <link href="https://shortimenosee.github.io/2024/04/14/ontology_design/"/>
+    <id>https://shortimenosee.github.io/2024/04/14/ontology_design/</id>
+    <published>2024-04-13T16:00:00.000Z</published>
+    <updated>2024-04-25T12:49:35.771Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;调研现有网络安全本体&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;</summary>
+    
+    
+    
+    <category term="学习" scheme="https://shortimenosee.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="Ontology" scheme="https://shortimenosee.github.io/tags/Ontology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ontology evaluating methods</title>
+    <link href="https://shortimenosee.github.io/2024/04/14/ontology_evaluating/"/>
+    <id>https://shortimenosee.github.io/2024/04/14/ontology_evaluating/</id>
+    <published>2024-04-13T16:00:00.000Z</published>
+    <updated>2024-04-25T12:49:35.771Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;由于毕设涉及到知识图谱的应用，知识图谱基于本体构建而成，所以调研了一下本体构建与评估&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;</summary>
+    
+    
+    
+    <category term="学习" scheme="https://shortimenosee.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="Ontology" scheme="https://shortimenosee.github.io/tags/Ontology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo Markdown-it 简明语法手册</title>
+    <link href="https://shortimenosee.github.io/2016/01/15/post1/"/>
+    <id>https://shortimenosee.github.io/2016/01/15/post1/</id>
+    <published>2016-01-15T12:19:32.000Z</published>
+    <updated>2024-04-25T12:49:35.771Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;尝试md语法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;</summary>
+    
+    
+    
+    <category term="学习" scheme="https://shortimenosee.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="Markdown" scheme="https://shortimenosee.github.io/tags/Markdown/"/>
+    
+    <category term="LaTex" scheme="https://shortimenosee.github.io/tags/LaTex/"/>
+    
+    <category term="教程" scheme="https://shortimenosee.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+</feed>

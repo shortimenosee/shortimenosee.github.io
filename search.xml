@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>语言模型</title>
+      <link href="/2024/04/25/llm/"/>
+      <url>/2024/04/25/llm/</url>
+      
+        <content type="html"><![CDATA[<p>llm基础知识</p><ul><li><span id="more"></span></li></ul><h1 id="语言模型种类"><a href="#语言模型种类" class="headerlink" title="语言模型种类"></a>语言模型种类</h1><ol><li>统计语言模型<br>第i个字符的概率仅和前n-1个字符相关<ul><li>计算高效，统计效果较差</li><li>适用语音识别和机器翻译</li></ul></li><li>神经语言模型</li><li>预训练语言模型<ul><li>BERT</li><li>Transformer</li></ul></li><li>大语言模型<ul><li>数据收集<ul><li>数据来源：网页、对话文本、书籍、科学文本、代码</li><li>数据预处理：质量过滤、去重、隐私去除、分词</li></ul></li></ul></li></ol><h1 id="llm架构"><a href="#llm架构" class="headerlink" title="llm架构"></a>llm架构</h1><ol><li>编码器-解码器架构（类似传统Transformer架构）<ul><li>Flan-T5</li></ul></li><li>因果解码器架构<ul><li>GPT-3</li><li>OPT</li><li>BLOOM</li><li>Gopher</li></ul></li><li>前缀解码器架构<ul><li>U-PaLM</li><li>GLM-130B</li></ul></li></ol><h1 id="适配微调"><a href="#适配微调" class="headerlink" title="适配微调"></a>适配微调</h1><ul><li>指令微调<ul><li>实例格式化：格式化已有数据集、格式化人类需求</li><li>效果：性能改进、任务泛化性（指令微调鼓励模型理解用于任务完成的自然语言指令）</li></ul></li><li>对齐微调<ul><li>对齐标准：有用性、诚实性、无害性</li><li>基于人类反馈的强化学习<ul><li>RLHF系统（预训练模型LM、奖励模型、训练LM的RL算法）</li></ul></li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> llm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Cybersecurity datasource</title>
+      <link href="/2024/04/18/ontology_design2/"/>
+      <url>/2024/04/18/ontology_design2/</url>
+      
+        <content type="html"><![CDATA[<p>整理一下可能用到的数据源</p><ul><li><span id="more"></span></li></ul><h1 id="CWE"><a href="#CWE" class="headerlink" title="CWE"></a>CWE</h1><p>&ensp;<a href="https://cwe.mitre.org/data/downloads.html">https://cwe.mitre.org/data/downloads.html</a></p><h1 id="CVE"><a href="#CVE" class="headerlink" title="CVE"></a>CVE</h1><p>&ensp;<a href="https://www.cve.org/Downloads">https://www.cve.org/Downloads</a></p><h1 id="CAPEC"><a href="#CAPEC" class="headerlink" title="CAPEC"></a>CAPEC</h1><p>&ensp;<a href="https://capec.mitre.org/data/downloads.html">https://capec.mitre.org/data/downloads.html</a></p><h1 id="ATT-CK"><a href="#ATT-CK" class="headerlink" title="ATT&amp;CK"></a>ATT&amp;CK</h1><ol><li>TTP <a href="https://capec.mitre.org/data/downloads.html">https://capec.mitre.org/data/downloads.html</a></li><li>Mitigation <a href="https://attack.mitre.org/mitigations/enterprise/">https://attack.mitre.org/mitigations/enterprise/</a></li></ol><h1 id="阿里云漏洞库"><a href="#阿里云漏洞库" class="headerlink" title="阿里云漏洞库"></a>阿里云漏洞库</h1><p>&ensp;<a href="https://avd.aliyun.com/nvd/list">https://avd.aliyun.com/nvd/list</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Datesource </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Regex</title>
+      <link href="/2024/04/18/regex/"/>
+      <url>/2024/04/18/regex/</url>
+      
+        <content type="html"><![CDATA[<p>regex正则匹配应用</p><ul><li><span id="more"></span>需要提取json文件中特定键值对，之前使用jar包将json文件转为json object， 今天尝试一下利用正则匹配查找</li></ul><h1 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h1><pre><code class="highlight java">java.util.regex</code></pre><h2 id="匹配规则"><a href="#匹配规则" class="headerlink" title="匹配规则"></a>匹配规则</h2><ol><li>\ &ensp;将下一字符标记为特殊字符</li><li>^ &ensp;从待匹配串第一个字符开始匹配</li><li>$ &ensp;从待匹配串末尾进行匹配</li></ol><h2 id="在线正则表达测试"><a href="#在线正则表达测试" class="headerlink" title="在线正则表达测试"></a>在线正则表达测试</h2><p><a href="https://tool.oschina.net/regex">https://tool.oschina.net/regex</a></p><h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><pre><code class="highlight java"><span class="type">String</span> <span class="variable">text</span> <span class="operator">=</span> <span class="string">&quot;Phone number: 123-123-213&quot;</span>; <span class="comment">//待匹配</span><span class="type">String</span> <span class="variable">regex</span> <span class="operator">=</span> <span class="string">&quot;(\\d&#123;3&#125;-(\\d&#123;3&#125;))&quot;</span>; <span class="comment">//模式串&amp;正则表达式</span><span class="type">Pattern</span> <span class="variable">pattern</span> <span class="operator">=</span> Pattern.compile(regex);<span class="comment">//编译模式串</span><span class="type">Matcher</span> <span class="variable">matcher</span> <span class="operator">=</span> pattern.matcher(text); <span class="comment">//建立一个matcher</span>matcher.find(); <span class="comment">//寻找相匹配的子串</span>matcher.match(); <span class="comment">//查看串整体是否与模式串匹配成功</span>matcher.group();<span class="comment">//根据分组来查看匹配成功的子串</span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Datesource </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Ontology Design</title>
+      <link href="/2024/04/14/ontology_design/"/>
+      <url>/2024/04/14/ontology_design/</url>
+      
+        <content type="html"><![CDATA[<p>调研现有网络安全本体</p><ul><li><span id="more"></span></li></ul><h2 id="A-survey-on-cybersecurity-knowledge-graph-construction"><a href="#A-survey-on-cybersecurity-knowledge-graph-construction" class="headerlink" title="A survey on cybersecurity knowledge graph construction"></a>A survey on cybersecurity knowledge graph construction</h2><ol><li>UCO<br>&ensp; <a href="https://github.com/Ebiquity/Unified-Cybersecurity-Ontology/blob/master/uco_1_5.owl">https://github.com/Ebiquity/Unified-Cybersecurity-Ontology/blob/master/uco_1_5.owl</a><br>&ensp; class:means, consequences, attack, attacker, attack pattern, exploit, exploit target, indicator  <ul><li>classes: software, malware, indicator, vulnerability, course of action, tool, attack pattern, campaign  </li><li>relationships: hasProduct, hasVulnerability, mitigates, uses, indicates, attributed to, related to, located at</li></ul></li><li>STUCCO<br>&ensp; <a href="https://github.com/stucco-archive/ontology/blob/master/stucco_schema.json">https://github.com/stucco-archive/ontology/blob/master/stucco_schema.json</a><br><img src="/images/stucco.png" alt="stucco">  </li><li>Cygraph  <ul><li>Network infrastructure：网络拓扑信息，如主机、网络设备、安全设备、组织等.  </li><li>Cyber posture：网络基础设施中影响网络攻击 &#x2F; 防御的元素，如主机配置、漏洞、服务、共享资源、防火墙策略等。  </li><li>Cyber threats：潜在的网络威胁，如攻击告警息CAPEC 攻击模式、ATT&amp;CK 攻击技术等。 </li><li>Mission readiness：任务准备包含任务目标、任务信息之间的关系以及他们对网络资产的依赖关系。</li></ul></li><li>OWL Ontologies in Cybersecurity: Conceptual Modeling of Cyber-Knowledge  <ul><li>安全资产本体：威胁，漏洞，风险，暴露，攻击，反制措施（AccessControl, Backup, CheckSum, Cryptography, EmissionSecurity, HoneyPot, KeyManagement）</li><li>入侵检测本体： 系统状态，IP地址，端口，协议，路由器，防火墙日志</li><li>恶意软件及行为本体：攻击发起事件，规避，远程控制，自我防御，窃取，颠覆</li><li>网络威胁情报本体：<ul><li>STIX</li><li>事件响应和威胁情报本体<a href="https://raw.githubusercontent.com/mswimmer/IRTI-Ontology/master/irti.rdf">https://raw.githubusercontent.com/mswimmer/IRTI-Ontology/master/irti.rdf</a></li><li>内部威胁情报本体<a href="http://resources.sei.cmu.edu/asset_files/TechnicalReport/2016_005_112_465537.owl">http://resources.sei.cmu.edu/asset_files/TechnicalReport/2016_005_112_465537.owl</a></li></ul></li><li>网络本体：<ul><li>流量实体，事件，数据库，管理工具，流量统计，动作，需求，参与者，路由，异常，网络实体<a href="https://doi.org/10.1109/MNET.2003.1201472">https://doi.org/10.1109/MNET.2003.1201472</a></li><li>NetOnto：<a href="https://doi.org/10.1109/INFOCOM.2008.4544611">https://doi.org/10.1109/INFOCOM.2008.4544611</a></li><li>Switch, router, firewall, workstation, server, publicService, sharedWorkstation, pulicServer <a href="https://doi.org/10.1007/978-3-642-04091-7_15">https://doi.org/10.1007/978-3-642-04091-7_15</a></li><li>端口范围，接口，防火墙规则，协议，操作<a href="https://doi.org/10.1007/978-3-642-01190-0_4">https://doi.org/10.1007/978-3-642-01190-0_4</a></li></ul></li></ul></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Ontology </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Ontology evaluating methods</title>
+      <link href="/2024/04/14/ontology_evaluating/"/>
+      <url>/2024/04/14/ontology_evaluating/</url>
+      
+        <content type="html"><![CDATA[<p>由于毕设涉及到知识图谱的应用，知识图谱基于本体构建而成，所以调研了一下本体构建与评估</p><ul><li><span id="more"></span></li></ul><h2 id="Evaluating-Domain-Ontologies-Clarification-Classification-and-Challenges"><a href="#Evaluating-Domain-Ontologies-Clarification-Classification-and-Challenges" class="headerlink" title="Evaluating Domain Ontologies: Clarification, Classification, and Challenges"></a>Evaluating Domain Ontologies: Clarification, Classification, and Challenges</h2><p><img src="/images/classes.png" alt="picture"><br><img src="/images/classes1.png" alt="picture">  </p><ol><li>Domain&#x2F;Task Fit<br>&ensp; 通过评估本体与语料库的匹配程度；通过执行语言翻译任务，确定本体中的多余、缺失以及模糊概念等错误…  </li><li>Error checking<br>&ensp; 识别语法错误、语义以及结构问题错误<br><img src="/images/errors.png" alt="picture">  </li><li>Metric Based<br><img src="/images/metrics.png" alt="picture"><br>&ensp;</li></ol><h2 id="本体评估工具的比较分析"><a href="#本体评估工具的比较分析" class="headerlink" title="本体评估工具的比较分析"></a>本体评估工具的比较分析</h2><ol><li>ODEval<br>&ensp;基于图理论检测本体概念分类问题  </li><li>OntoQA<br>&ensp; 评估模式指标以及实例指标，模式指标包含关联丰富度，属性丰富度，继承关系丰富度  </li><li>Core<br>&ensp; 从黄金准则以及用户需要两方面进行评估  </li><li>OntoManager<br>&ensp; 通过收集用户应用本体的交互性数据了解分析用户需求  </li><li>OOPS<br>&ensp; 基于web的检测工具</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Ontology </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo Markdown-it 简明语法手册</title>
+      <link href="/2016/01/15/post1/"/>
+      <url>/2016/01/15/post1/</url>
+      
+        <content type="html"><![CDATA[<p>尝试md语法</p><ul><li><span id="more"></span>尝试插入图片<br><img src="/images/bg-1.jpg" alt="picture"></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Markdown </tag>
+            
+            <tag> LaTex </tag>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+    
+    
+    <entry>
+      <title>404</title>
+      <link href="/404/index.html"/>
+      <url>/404/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>about</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+  
+</search>
